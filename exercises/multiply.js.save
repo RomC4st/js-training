@@ -12,22 +12,33 @@
 
 
 function multiply(x,y){
-let  res = 0
 
+let  res = 0;
 if (x>=0 & y>=0)
-    for ( i=0 ; i<x ; i++)
-    res = res + y
-    return res
 
-if (x<0 & y<0)
-    for ( i=0 ; i>x ; i--)
-     res = res + y
-     return res
+for (let i=0 ; i<x ; i++){
+    res = res + (y);
+}
+return res;
+
+
+
+
+if (x<0)
+
+for (let i=0 ; i<x ; i--){
+    res = res + (x) ;
+}
+return res;
+
+if (y<0)
+
+for (let i=0 ; i<x ;
 }
 
 
 
-/* Begin of tests
+//* Begin of tests
 const assert = require('assert')
 
 assert.strictEqual(typeof multiply, 'function')

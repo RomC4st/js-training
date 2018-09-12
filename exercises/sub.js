@@ -8,10 +8,18 @@
 
 // Your code :
 
+function  sub(x,y) 
+
+{
+
+return x-y
+
+}
+
+
 //* Begin of tests
 const assert = require('assert')
 const rand = Math.random()
-
 assert.strictEqual(typeof sub, 'function')
 assert.strictEqual(sub.length, 2)
 assert.strictEqual(sub(2, 2), 0)

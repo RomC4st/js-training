@@ -10,8 +10,12 @@
  */
 
 // Your code :
-function abs(aq) {
-  return Math.abs(a - b);
+function abs(x)
+{
+if (x>=0)
+   return x
+if (x<0)
+   return -x
 }
 
 //* Begin of tests
