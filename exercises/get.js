@@ -15,6 +15,16 @@ const sourceObject = {
   log: console.log,
 }
 
+function get(x){
+
+return sourceObject[x]
+}
+
+
+
+
+
+
 // Your code :
 
 //* Begin of tests
