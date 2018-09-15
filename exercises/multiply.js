@@ -14,12 +14,12 @@
 function multiply(x,y){
 let  res = 0
 
-if (x>=0 & y>=0)
+if (x>=0 && y>=0)
     for ( i=0 ; i<x ; i++)
     res = res + y
     return res
 
-if (x<0 & y<0)
+if (x<0 && y<0)
     for ( i=0 ; i>x ; i--)
      res = res + y
      return res

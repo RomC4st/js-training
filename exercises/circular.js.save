@@ -7,11 +7,7 @@
  * @notions Data-Structures, Get, Set
  */
 
-// Your code :
-
-let circular = new Object();
-circular.circular = circular;
-
+// Your code 
 
 
 //* Begin of tests

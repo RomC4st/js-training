@@ -10,10 +10,14 @@
  *
  */
 
-
+function jadenCase(str){
+   	return str.toLowerCase()
+	.split(' ').map((str) => str.charAt(0).toUpperCase() + str.substring(1))
+	.join(' ');
+}
 
 //* Begin of tests
 const assert = require('assert')
-
-assert.fail('You must write your own tests')
+assert.strictEqual(typeof jadenCase, 'function')
+assert.strictEqual(jadenCase('How are you'), 'How Are You')
 // End of tests */

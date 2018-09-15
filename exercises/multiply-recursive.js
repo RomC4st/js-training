@@ -11,6 +11,22 @@
 
 // Your code :
 
+var tot = 0; var a = 0;
+
+function multiply(x,y){
+if(a==0)tot=0;
+if(x==0||y==0){tot=0;a=0;}
+else
+{
+	if(y>0){a++;tot += x;}else{a--;tot-=x;}
+   	if ((y>0&&a<y)||(y<0&&a>y))
+	{
+		multiply(x,y);
+	}
+	else {a=0;}
+}
+return tot;
+}
 //* Begin of tests
 const assert = require('assert')
 
